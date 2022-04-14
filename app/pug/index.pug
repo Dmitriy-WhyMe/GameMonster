@@ -8,7 +8,75 @@ html
 		include blocks/header.pug
 
 		main.page-container
-			//- тут все блоки страницы кроме шапки и подвала
+			.container 
+				section.main-slider 
+					.main-slider__left 
+						img.main-slider__absolute(src=img+"top-slider-left-a.png", alt="")
+						img(src=img+"top-slider-left.png", alt="")
+						h2 Страшные скидки <br>в честь открытия
+					.main-slider__right
+						.swiper-container(class="mySwiper")
+							.swiper-wrapper
+								.swiper-slide
+									img.desk(src=img+"top-slider-right.png", alt="")
+									img.mob(src=img+"top-slider/Rectangle 45.png", alt="")
+									h2 Witcher 3: Wild Hunt
+									.main-slider__price 
+										.main-slider__price-main 
+											.main-slider__price-txt 790р
+											.main-slider__price-sell - 30%
+										.main-slider__price-old 1 990р
+								.swiper-slide
+									img.desk(src=img+"top-slider-right.png", alt="")
+									img.mob(src=img+"top-slider/Rectangle 45.png", alt="")
+									h2 Witcher 4: Wild Hunt
+									.main-slider__price 
+										.main-slider__price-main 
+											.main-slider__price-txt 790р
+											.main-slider__price-sell - 30%
+										.main-slider__price-old 1 990р
+								.swiper-slide
+									img.desk(src=img+"top-slider-right.png", alt="")
+									img.mob(src=img+"top-slider/Rectangle 45.png", alt="")
+									h2 Witcher 5: Wild Hunt
+									.main-slider__price 
+										.main-slider__price-main 
+											.main-slider__price-txt 790р
+											.main-slider__price-sell - 30%
+										.main-slider__price-old 1 990р
+								.swiper-slide
+									img.desk(src=img+"top-slider-right.png", alt="")
+									img.mob(src=img+"top-slider/Rectangle 45.png", alt="")
+									h2 Witcher 6: Wild Hunt
+									.main-slider__price 
+										.main-slider__price-main 
+											.main-slider__price-txt 790р
+											.main-slider__price-sell - 30%
+										.main-slider__price-old 1 990р
+								.swiper-slide
+									img.desk(src=img+"top-slider-right.png", alt="")
+									img.mob(src=img+"top-slider/Rectangle 45.png", alt="")
+									h2 Witcher 7: Wild Hunt
+									.main-slider__price 
+										.main-slider__price-main 
+											.main-slider__price-txt 790р
+											.main-slider__price-sell - 30%
+										.main-slider__price-old 1 990р
+							.swiper-pagination
+						.swiper-container(class="mySwiper-1")
+							.swiper-wrapper
+								.swiper-slide
+									img(src=img+"top-slider/Union.png", alt="")
+								.swiper-slide
+									img(src=img+"top-slider/Union (1).png", alt="")
+								.swiper-slide
+									img(src=img+"top-slider/Union (2).png", alt="")
+								.swiper-slide
+									img(src=img+"top-slider/Union.png", alt="")
+								.swiper-slide
+									img(src=img+"top-slider/Union (3).png", alt="")
+
+
 
 		include blocks/footer.pug
 		include blocks/scripts.pug
