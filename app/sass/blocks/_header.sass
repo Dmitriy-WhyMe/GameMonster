@@ -35,7 +35,7 @@ header > .container
             display: none
     &__mobile
         position: absolute
-        left: 15px
+        left: 30px
         top: 70px
         background: #161616
         border-radius: 21px
@@ -48,7 +48,7 @@ header > .container
             padding-left: 16px
             padding-right: 16px
             padding-top: 10px
-            max-width: calc( 100% - 20px )
+            max-width: calc( 100% - 30px )
             left: 0
             right: 0
             margin: 0 auto
@@ -199,6 +199,8 @@ header > .container
         display: flex
         align-items: center
         gap: 35px
+        +mq($max-width: 1440px)
+            gap: 25px
         +mq($max-width: 1279px)
             gap: 25px
             flex-direction: column
