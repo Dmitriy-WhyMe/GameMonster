@@ -51,7 +51,7 @@ a
 		line-height: 100%
 		margin-bottom: 17px
 	+mq($max-width: 374px)
-		font-size: 18px
+		font-size: 24px
 
 .title-row 
 	display: flex
@@ -62,6 +62,9 @@ a
 		justify-content: space-between
 	+mq($max-width: 374px)
 		margin-bottom: 20px
+		flex-direction: column
+		gap: 0px
+		align-items: flex-start
 	h3
 		margin-bottom: 0
 	a
@@ -648,4 +651,354 @@ a
 				font-size: 14px
 				line-height: 64.19%
 				color: #D5D5D5
-		
+
+.index-news 
+	margin-top: 60px
+	+mq($max-width: 767px)
+		margin-top: 20px
+.news
+	display: flex
+	gap: 33px
+	+mq($max-width: 1441px)
+		gap: 30px
+	+mq($max-width: 1279px)
+		flex-direction: column
+		justify-content: center
+	+mq($max-width: 1279px)
+		gap: 15px
+	&-left
+		max-width: 1024px
+		width: 100%
+		display: flex
+		flex-direction: column
+		position: relative
+		+mq($max-width: 1441px)
+			max-width: 100%
+		+mq($max-width: 1279px)
+			max-width: 870px
+			margin: 0 auto
+		+mq($max-width: 1023px)
+			max-width: 720px
+		+mq($max-width: 767px)
+			gap: 15px
+		.news__txt
+			position: absolute
+			bottom: 30px
+			left: 30px
+			display: flex
+			flex-direction: column-reverse
+			max-width: 335px
+			+mq($max-width: 767px)
+				bottom: 20px
+				left: 20px
+				max-width: 300px
+		.news__category
+			font-weight: 400
+			font-size: 18px
+			line-height: 109.5%
+			color: rgba(255, 255, 255, 0.66)
+			+mq($max-width: 767px)
+				font-size: 16px
+		.news__title
+			font-weight: 500
+			font-size: 30px
+			line-height: 120%
+			margin-top: 8px
+			+mq($max-width: 767px)
+				font-size: 20px
+	&-right
+		max-width: 383px
+		width: 100%
+		display: flex
+		gap: 29px
+		flex-direction: column
+		+mq($max-width: 1441px)
+			gap: 5px
+			max-width: 344px
+		+mq($max-width: 1359px)
+			max-width: 324px
+		+mq($max-width: 1439px)
+			gap: 14px
+		+mq($max-width: 1359px)
+			gap: 10px
+		+mq($max-width: 1279px)
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			max-width: 870px
+			margin: 0 auto
+			gap: 15px
+
+	&-row
+		display: flex
+		margin-top: 40px
+		justify-content: space-between
+		gap: 30px
+		+mq($max-width: 1279px)
+			max-width: 870px
+			margin: 0 auto
+			margin-top: 15px
+			flex-wrap: wrap
+			gap: 5px
+		+mq($max-width: 1023px)
+			flex-direction: column
+		a
+			max-width: 262px
+			width: 100%
+			font-weight: 500
+			font-size: 16px
+			line-height: 123%
+			+mq($max-width: 1279px)
+				max-width: 48%
+			+mq($max-width: 1023px)
+				max-width: 100%
+			+mq($max-width: 767px)
+
+	&__item
+		position: relative
+	&__smalls
+		display: flex
+		flex-direction: column
+		gap: 21px
+		+mq($max-width: 1441px)
+			gap: 5px
+		+mq($max-width: 1439px)
+			gap: 15px
+		+mq($max-width: 1359px)
+			gap: 5px
+		+mq($max-width: 1279px)
+			max-width: 61%
+		+mq($max-width: 1023px)
+			max-width: 51.6%
+		+mq($max-width: 767px)
+			max-width: 100%
+			gap: 15px
+	&__small
+		display: flex
+		align-items: center
+		gap: 17px
+		img
+			border-radius: 15px
+		.news__title
+			font-weight: 500
+			font-size: 16px
+			line-height: 140.5%
+			+mq($max-width: 1439px)
+				font-size: 14px
+				line-height: 140%
+			+mq($max-width: 374px)
+				font-size: 13px
+		.news__category
+			font-weight: 400
+			font-size: 16px
+			line-height: 140.5%
+			color: rgba(255, 255, 255, 0.66)
+	&__video
+		display: flex
+		gap: 22px
+		margin-left: -115px
+		+mq($max-width: 1279px)
+			margin-left: 0px
+			max-width: 100%
+			width: 100%
+		+mq($max-width: 767px)
+			gap: 17px
+		img
+			+mq($max-width: 767px)
+				max-width: 114px
+				border-radius: 15px
+				object-fit: cover
+		&-txt
+			p
+				font-weight: 500
+				font-size: 16px
+				line-height: 140.5%
+				margin-bottom: 10px
+			a
+				font-weight: 400
+				font-size: 16px
+				line-height: 140.5%
+				color: #F59502
+	&__mobile
+		position: relative
+		+mq($max-width: 1279px)
+			max-width: 324px
+		+mq($max-width: 1023px)
+			max-width: 327px
+		img
+			height: 298px
+			object-fit: cover
+			max-width: 100%
+			width: 100%
+			border-radius: 20px
+			clip-path: path('M363 0H20C8.95431 0 0 8.95431 0 20V278C0 289.046 8.95431 298 20 298H304.5C315.546 298 324.5 289.046 324.5 278V237C324.5 225.954 333.454 217 344.5 217H363C374.046 217 383 208.046 383 197V20C383 8.95431 374.046 0 363 0Z')
+			+mq($max-width: 1441px)
+				clip-path: path('M324.958 0H20.9583C9.91262 0 0.958313 8.95431 0.958313 20V278C0.958313 289.046 9.91261 298 20.9583 298H272.415C283.461 298 292.415 289.046 292.415 278V237C292.415 225.954 301.37 217 312.415 217H324.958C336.004 217 344.958 208.046 344.958 197V20C344.958 8.95431 336.004 0 324.958 0Z')
+			+mq($max-width: 1359px)
+				clip-path: path('M304.958 0H20.9583C9.91262 0 0.958313 8.95431 0.958313 20V278C0.958313 289.046 9.91261 298 20.9583 298H255.47C266.516 298 275.47 289.046 275.47 278V237C275.47 225.954 284.424 217 295.47 217H304.958C316.004 217 324.958 208.046 324.958 197V20C324.958 8.95431 316.004 0 304.958 0Z')
+			+mq($max-width: 374px)
+				clip-path: none
+		.news__icons 
+			position: absolute
+			right: 15px
+			bottom: 15px
+			display: flex
+			flex-direction: column
+			gap: 14px
+			+mq($max-width: 374px)
+				display: none
+		.news__txt
+			position: absolute
+			left: 30px
+			bottom: 30px
+			font-weight: 500
+			font-size: 24px
+			line-height: 120%
+			max-width: 275px
+			display: flex
+			flex-direction: column-reverse
+			margin-top: 8px
+			+mq($max-width: 767px)
+				bottom: 20px
+				left: 20px
+				font-size: 20px
+				max-width: 230px
+		.news__category
+			font-weight: 400
+			font-size: 18px
+			line-height: 109.5%
+			color: rgba(255, 255, 255, 0.66)
+			+mq($max-width: 767px)
+				font-size: 16px
+	.news-1
+		clip-path: path('M262.129 327.779C262.129 338.407 270.77 347.023 281.43 347.023H453.699C464.358 347.023 473 338.407 473 327.779V194C473 182.402 482.402 173 494 173H539.699C550.359 173 559 164.384 559 153.756V19.2678C559 8.63943 550.358 0.0234375 539.699 0.0234375H19.3013C8.64147 0.0234375 0 8.63943 0 19.2678V241.781C0 252.409 8.64149 261.203 19.3013 261.203H241.129C252.727 261.203 262.129 270.605 262.129 282.203V327.779Z')
+		width: 100%
+		+mq($max-width: 1441px)
+			clip-path: path('M251.207 310.405C251.207 320.465 259.488 328.621 269.704 328.621H434.795C445.01 328.621 453.292 320.465 453.292 310.405V184.895C453.292 173.297 462.694 163.895 474.292 163.895H517.211C527.427 163.895 535.708 155.739 535.708 145.679V18.3765C535.708 8.31596 527.427 0.1603 517.211 0.1603H18.4971C8.28141 0.1603 0 8.31596 0 18.3765V229.001C0 239.062 8.28142 247.385 18.4971 247.385H230.207C241.805 247.385 251.207 256.788 251.207 268.385V310.405Z')
+		+mq($max-width: 1439px)
+			max-width: 504px
+			clip-path: path('M236.644 310.405C236.644 320.465 244.446 328.621 254.069 328.621H409.589C419.213 328.621 427.014 320.465 427.014 310.405V184.895C427.014 173.297 436.416 163.895 448.014 163.895H487.228C496.851 163.895 504.653 155.739 504.653 145.679V18.3765C504.653 8.31596 496.851 0.1603 487.228 0.1603H17.4248C7.80133 0.1603 0 8.31596 0 18.3765V229.001C0 239.062 7.80134 247.385 17.4248 247.385H215.644C227.242 247.385 236.644 256.788 236.644 268.385V310.405Z')
+		+mq($max-width: 1359px)
+			max-width: 473px
+			clip-path: path('M222.082 310.405C222.082 320.465 229.403 328.621 238.434 328.621H384.384C393.415 328.621 400.736 320.465 400.736 310.405V184.895C400.736 173.297 410.138 163.895 421.736 163.895H457.245C466.276 163.895 473.597 155.739 473.597 145.679V18.3765C473.597 8.31596 466.276 0.1603 457.245 0.1603H16.3525C7.32125 0.1603 0 8.31596 0 18.3765V229.001C0 239.062 7.32126 247.385 16.3525 247.385H201.082C212.68 247.385 222.082 256.788 222.082 268.385V310.405Z')
+		+mq($max-width: 1023px)
+			max-width: 386px
+			clip-path: path('M181.361 310.405C181.361 320.465 187.34 328.621 194.715 328.621H313.903C321.278 328.621 327.257 320.465 327.257 310.405V184.895C327.257 173.297 336.659 163.895 348.257 163.895H373.404C380.78 163.895 386.758 155.739 386.758 145.679V18.3765C386.758 8.31596 380.78 0.1603 373.404 0.1603H13.3541C5.97883 0.1603 0 8.31596 0 18.3765V229.001C0 239.062 5.97883 247.385 13.3541 247.385H160.361C171.959 247.385 181.361 256.788 181.361 268.385V310.405Z')
+		+mq($max-width: 767px)
+			clip-path: none
+			max-width: 100%
+		img
+			object-fit: cover
+			max-width: 559px
+			width: 100%
+			height: 347px
+			+mq($max-width: 1441px)
+				height: 328px
+			+mq($max-width: 767px)
+				height: auto
+				max-width: 100%
+				border-radius: 15px
+		.news__txt
+			bottom: 110px
+			+mq($max-width: 767px)
+				bottom: 20px
+	.news-2
+		position: absolute
+		right: 0
+		top: 0
+		clip-path: path('M21.2031 473.284C9.49296 473.284 0 463.996 0 452.539V227.745C0 216.288 9.49296 207 21.2031 207H56.4442C72.7675 207 86.0001 193.767 86.0001 177.444V20.7447C86.0001 9.28775 95.4931 0 107.203 0H495.101C506.811 0 516.304 9.28775 516.304 20.7447V452.213C516.418 463.996 506.925 473.284 495.215 473.284H230.697L209.381 473.284H21.2031Z')
+		+mq($max-width: 1441px)
+			max-width: 496px
+			width: 100%
+			clip-path: path('M21.1946 448.136C9.97236 448.136 0.874939 439.344 0.874939 428.5V215.715C0.874939 204.87 9.97236 196.079 21.1946 196.079H53.7358C70.0591 196.079 83.2917 182.846 83.2917 166.523V19.7744C83.2917 8.9296 92.3891 0.138092 103.611 0.138092H475.347C486.569 0.138092 495.667 8.9296 495.667 19.7744V428.19C495.775 439.344 486.678 448.136 475.456 448.136H221.96L201.532 448.136H21.1946Z')
+		+mq($max-width: 1439px)
+			max-width: 466px
+			clip-path: path('M19.85 448.136C9.27832 448.136 0.708282 439.344 0.708282 428.5V215.715C0.708282 204.87 9.27832 196.079 19.85 196.079H48.7913C65.1146 196.079 78.3473 182.846 78.3473 166.523V19.7744C78.3473 8.9296 86.9173 0.138092 97.489 0.138092H447.675C458.246 0.138092 466.816 8.9296 466.816 19.7744V428.19C466.919 439.344 458.349 448.136 447.777 448.136H208.977L189.733 448.136H19.85Z')
+		+mq($max-width: 1359px)
+			max-width: 437px
+			clip-path: path('M18.5054 448.136C8.58428 448.136 0.541626 439.344 0.541626 428.5V215.715C0.541626 204.87 8.58428 196.079 18.5054 196.079H43.8469C60.1702 196.079 73.4028 182.846 73.4028 166.523V19.7744C73.4028 8.9296 81.4455 0.138092 91.3666 0.138092H420.003C429.924 0.138092 437.966 8.9296 437.966 19.7744V428.19C438.062 439.344 430.02 448.136 420.098 448.136H195.993L177.934 448.136H18.5054Z')
+		+mq($max-width: 1023px)
+			max-width: 357px
+			clip-path: path('M15.4508 448.136C7.34883 448.136 0.780884 439.344 0.780884 428.5V215.715C0.780884 204.87 7.34883 196.079 15.4508 196.079H30.7263C47.0496 196.079 60.2823 182.846 60.2823 166.523V19.7744C60.2823 8.9296 66.8502 0.138092 74.9522 0.138092H343.329C351.431 0.138092 357.999 8.9296 357.999 19.7744V428.19C358.078 439.344 351.51 448.136 343.408 448.136H160.395L145.646 448.136H15.4508Z')
+		+mq($max-width: 767px)
+			position: relative
+			clip-path: none
+			max-width: 100%
+		img
+			object-fit: cover
+			max-width: 516px
+			width: 100%
+			height: 473px
+			+mq($max-width: 1441px)
+				height: 448px
+			+mq($max-width: 767px)
+				height: auto
+				max-width: 100%
+				border-radius: 15px
+	.news-3
+		margin-top: -50px
+		clip-path: path('M227.999 20.7317C227.999 9.28185 218.692 0 207.211 0H20.7876C9.30646 0 -0.000854492 9.28185 -0.000854492 20.7317V484.268C-0.000854492 495.718 9.30646 505 20.7876 505H319.102H339.891H452.186C463.667 505 472.975 495.718 472.975 484.268V106.732C472.975 95.2819 463.667 86 452.186 86H258.999C241.878 86 227.999 72.1208 227.999 55V20.7317Z')
+		+mq($max-width: 1441px)
+			margin-top: -30px
+			clip-path: path('M218.5 20.001C218.5 9.16293 209.581 0.376984 198.578 0.376984H19.9223C8.91949 0.376984 0 9.16293 0 20.001V458.772C0 469.61 8.91949 478.396 19.9223 478.396H305.807H325.73H433.346C444.349 478.396 453.268 469.61 453.268 458.772V101.406C453.268 90.5682 444.349 81.7822 433.346 81.7822H249.5C232.379 81.7822 218.5 67.903 218.5 50.7822V20.001Z')
+		+mq($max-width: 1439px)
+			margin-top: -50px
+			max-width: 426px
+			clip-path: path('M205.833 20.001C205.833 9.16293 197.431 0.376984 187.066 0.376984H18.7674C8.40244 0.376984 0 9.16293 0 20.001V458.772C0 469.61 8.40244 478.396 18.7674 478.396H288.079H306.847H408.224C418.589 478.396 426.992 469.61 426.992 458.772V101.406C426.992 90.5682 418.589 81.7822 408.224 81.7822H236.833C219.712 81.7822 205.833 67.903 205.833 50.7822V20.001Z')
+		+mq($max-width: 1359px)
+			max-width: 400px
+			clip-path: path('M193.167 20.001C193.167 9.16293 185.281 0.376984 175.554 0.376984H17.6125C7.88535 0.376984 0 9.16293 0 20.001V458.772C0 469.61 7.88535 478.396 17.6125 478.396H270.351H287.964H383.103C392.83 478.396 400.715 469.61 400.715 458.772V101.406C400.715 90.5682 392.83 81.7822 383.103 81.7822H224.167C207.046 81.7822 193.167 67.903 193.167 50.7822V20.001Z')
+		+mq($max-width: 1279px)
+			margin-top: -60px
+		+mq($max-width: 1023px)
+			max-width: 327px
+			clip-path: path('M157.748 20.001C157.748 9.16293 151.308 0.376984 143.365 0.376984H14.3831C6.43951 0.376984 0 9.16293 0 20.001V458.772C0 469.61 6.43951 478.396 14.3831 478.396H220.78H235.163H312.857C320.801 478.396 327.24 469.61 327.24 458.772V101.406C327.24 90.5682 320.801 81.7822 312.857 81.7822H188.748C171.627 81.7822 157.748 67.903 157.748 50.7822V20.001Z')
+		+mq($max-width: 767px)
+			clip-path: none
+			max-width: 100%
+			margin-top: 0
+		img
+			object-fit: cover
+			max-width: 472px
+			width: 100%
+			height: 505px
+			+mq($max-width: 1441px)
+				height: 478px
+			+mq($max-width: 767px)
+				height: auto
+				max-width: 100%
+				border-radius: 15px
+	.news-4
+		position: absolute
+		right: 0
+		bottom: 0
+		clip-path: path('M385.834 292.998C396.494 292.998 405.135 284.206 405.135 273.361V167.693C405.135 151.37 418.368 138.137 434.691 138.137H497.699C508.359 138.137 517 129.345 517 118.5L516.699 19.6369C516.699 8.79166 508.058 0 497.398 0H20.0005C9.34069 0 0.699219 8.79166 0.699219 19.6369L1.00052 273.363C1.00052 284.208 9.642 293 20.3018 293H263.13L385.834 292.998Z')
+		+mq($max-width: 1441px)
+			max-width: 496px
+			width: 100%
+			clip-path: path('M369.674 277.394C379.889 277.394 388.171 269.072 388.171 258.806V160.363C388.171 144.04 401.403 130.807 417.727 130.807H476.878C487.094 130.807 495.375 122.485 495.375 112.219L495.086 18.6382C495.086 8.37238 486.805 0.0504456 476.589 0.0504456H19.0835C8.86784 0.0504456 0.586426 8.37238 0.586426 18.6382L0.875172 258.808C0.875172 269.074 9.1566 277.396 19.3722 277.396H252.082L369.674 277.394Z')
+		+mq($max-width: 1439px)
+			max-width: 466px
+			clip-path: path('M348.127 277.394C357.751 277.394 365.552 269.072 365.552 258.806V160.363C365.552 144.04 378.785 130.807 395.108 130.807H449.117C458.741 130.807 466.542 122.485 466.542 112.219L466.27 18.6382C466.27 8.37238 458.468 0.0504456 448.845 0.0504456H17.8613C8.23782 0.0504456 0.436493 8.37238 0.436493 18.6382L0.7085 258.808C0.7085 269.074 8.50984 277.396 18.1333 277.396H237.353L348.127 277.394Z')
+		+mq($max-width: 1359px)
+			max-width: 437px
+			clip-path: path('M326.581 277.394C335.612 277.394 342.934 269.072 342.934 258.806V160.363C342.934 144.04 356.166 130.807 372.49 130.807H421.356C430.387 130.807 437.708 122.485 437.708 112.219L437.453 18.6382C437.453 8.37238 430.132 0.0504456 421.101 0.0504456H16.639C7.60781 0.0504456 0.28656 8.37238 0.28656 18.6382L0.541828 258.808C0.541828 269.074 7.86309 277.396 16.8943 277.396H222.623L326.581 277.394Z')
+		+mq($max-width: 1023px)
+			max-width: 357px
+			clip-path: path('M267.038 277.394C274.413 277.394 280.392 269.072 280.392 258.806V160.363C280.392 144.04 293.625 130.807 309.948 130.807H344.435C351.81 130.807 357.789 122.485 357.789 112.219L357.58 18.6381C357.58 8.37234 351.602 0.050415 344.226 0.050415H13.9267C6.55143 0.050415 0.572601 8.37234 0.572601 18.6381L0.781063 258.808C0.781063 269.074 6.7599 277.396 14.1352 277.396H182.142L267.038 277.394Z')
+		+mq($max-width: 767px)
+			position: relative
+			clip-path: none
+			max-width: 100%
+		img
+			object-fit: cover
+			max-width: 516px
+			width: 100%
+			height: 293px
+			+mq($max-width: 1441px)
+				height: 277px
+			+mq($max-width: 767px)
+				height: auto
+				max-width: 100%
+				border-radius: 15px
