@@ -1,0 +1,184 @@
+//SECTION index-katalog 
+.index-katalog 
+	margin-top: 55px
+	+mq($max-width: 1279px)
+		margin-top: 20px
+	.flex
+		flex-wrap: wrap
+		gap: 28px
+		+mq($max-width: 1279px)
+			justify-content: center
+		.katalog__item
+			position: relative
+			max-width: 339px
+			+mq($max-width: 1679px)
+				max-width: 320px
+			+mq($max-width: 1360px)
+				max-width: 304px
+			+mq($max-width: 1359px)
+				max-width: 284px
+			+mq($max-width: 1279px)
+				max-width: 302px
+			+mq($max-width: 1023px)
+				max-width: 340px
+			+mq($max-width: 767px)
+				max-width: 283px
+				width: 100%
+			+mq($max-width: 735px)
+				max-width: 100%
+			img
+				object-fit: cover
+				max-width: 100%
+				width: 100%
+				height: 258px
+				border-radius: 15px
+				clip-path: path('M13.56 0.625488C6.07103 0.625488 0 6.18001 0 13.0318V245.488C0 252.339 6.071 257.894 13.56 257.894H214.511C222 257.894 228.071 252.339 228.071 245.488V209.136C228.071 198.643 236.578 190.136 247.071 190.136H325.44C332.929 190.136 339 184.582 339 177.73V13.0318C339 6.18001 332.929 0.625488 325.44 0.625488H13.56Z')
+				+mq($max-width: 1679px)
+					max-width: 320px
+					width: 100%	
+					clip-path: path('M12.8 0C5.73077 0 0 5.57032 0 12.4416V245.558C0 252.43 5.73074 258 12.8 258H202.489C209.558 258 215.289 252.43 215.289 245.558V209.05C215.289 198.556 223.795 190.05 234.289 190.05H307.2C314.269 190.05 320 184.479 320 177.608V12.4416C320 5.57032 314.269 0 307.2 0H12.8Z')
+				+mq($max-width: 1367px)
+					max-width: 304px
+					clip-path: path('M12.16 0C5.44423 0 0 5.57032 0 12.4416V245.558C0 252.43 5.4442 258 12.16 258H192.364C199.08 258 204.524 252.43 204.524 245.558V209.05C204.524 198.556 213.031 190.05 223.524 190.05H291.84C298.556 190.05 304 184.479 304 177.608V12.4416C304 5.57032 298.556 0 291.84 0H12.16Z')
+				+mq($max-width: 1359px)
+					max-width: 284px
+					height: 216px
+					clip-path: path('M11.36 0C5.08606 0 0 4.66352 0 10.4162V205.584C0 211.336 5.08603 216 11.36 216H179.709C185.983 216 191.069 211.336 191.069 205.584V178.111C191.069 167.618 199.575 159.111 210.069 159.111H272.64C278.914 159.111 284 154.448 284 148.695V10.4162C284 4.66352 278.914 0 272.64 0H11.36Z')
+				+mq($max-width: 1279px)
+					max-width: 283px
+				+mq($max-width: 735px)
+					max-width: 384px
+					height: 292px
+					clip-path: path('M15.36 0C6.87692 0 0 6.30439 0 14.0812V277.919C0 285.696 6.87689 292 15.36 292H242.986C251.469 292 258.346 285.696 258.346 277.919V234.095C258.346 223.602 266.853 215.095 277.346 215.095H368.64C377.123 215.095 384 208.791 384 201.014V14.0812C384 6.30439 377.123 0 368.64 0H15.36Z')
+				+mq($max-width: 411px)
+					max-width: 345px
+					clip-path: path('M13.8 0C6.17849 0 0 6.30439 0 14.0812V277.919C0 285.696 6.17845 292 13.8 292H218.308C225.929 292 232.108 285.696 232.108 277.919V234.095C232.108 223.602 240.615 215.095 251.108 215.095H331.2C338.821 215.095 345 208.791 345 201.014V14.0812C345 6.30439 338.821 0 331.2 0H13.8Z')
+				+mq($max-width: 360px)
+					max-width: 330px
+					height: 216px
+					clip-path: path('M13.2 0C5.90986 0 0 4.66352 0 10.4162V205.584C0 211.336 5.90982 216 13.2 216H208.816C216.106 216 222.016 211.336 222.016 205.584V178.111C222.016 167.618 230.523 159.111 241.016 159.111H316.8C324.09 159.111 330 154.448 330 148.695V10.4162C330 4.66352 324.09 0 316.8 0H13.2Z')
+				+mq($max-width: 359px)
+					max-width: 290px
+					clip-path: path('M11.6 0C5.19351 0 0 4.66352 0 10.4162V205.584C0 211.336 5.19348 216 11.6 216H183.505C189.912 216 195.105 211.336 195.105 205.584V178.111C195.105 167.618 203.612 159.111 214.105 159.111H278.4C284.806 159.111 290 154.448 290 148.695V10.4162C290 4.66352 284.806 0 278.4 0H11.6Z')
+		.katalog__infos
+			position: absolute
+			top: 10px
+			left: 10px
+			display: flex
+			align-items: center
+			gap: 7px
+			.katalog__info-main
+				background: #B602F5
+				border-radius: 8px
+				height: 31px
+				display: flex
+				align-items: center
+				padding: 0 10px
+				font-weight: 400
+				font-size: 14px
+				line-height: 125.69%
+			.katalog__info-dop
+				background: #000000
+				border-radius: 8px
+				height: 31px
+				display: flex
+				align-items: center
+				padding: 0 10px
+				font-weight: 400
+				font-size: 14px
+				line-height: 125.69%
+		.katalog__price
+			position: absolute
+			right: 15px
+			bottom: 80px
+			+mq($max-width: 1359px)
+				right: 5px
+				bottom: 75px
+			+mq($max-width: 767px)
+				right: 10px
+				bottom: 80px
+			+mq($max-width: 735px)
+				right: 15px
+				bottom: 85px
+			+mq($max-width: 374px)
+				right: 5px
+				bottom: 75px
+			&-main
+				font-weight: 500
+				font-size: 24px
+				line-height: 125.69%
+			&-old
+				font-weight: 300
+				font-size: 16px
+				line-height: 125.69%
+				color: #AAAAAA
+				text-decoration: line-through
+		.katalog__discount
+			right: 15px
+			bottom: 160px
+			position: absolute
+			display: flex
+			align-items: center
+			justify-content: center
+			min-width: 59px
+			height: 32px
+			background: linear-gradient(108.47deg, #F59502 -0.66%, #F55902 106.05%)
+			border-radius: 11px
+			font-weight: 400
+			font-size: 14px
+			line-height: 125.69%
+			+mq($max-width: 1359px)
+				right: 5px
+				bottom: 140px
+			+mq($max-width: 1279px)
+				bottom: 143px
+			+mq($max-width: 1023px)
+				bottom: 150px
+			+mq($max-width: 767px)
+				right: 15px
+				bottom: 165px
+			+mq($max-width: 413px)
+				bottom: 155px
+			+mq($max-width: 374px)
+				right: 5px
+				bottom: 140px
+		.katalog__title
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-top: 10px
+			padding-right: 47px
+			margin-bottom: 10px
+			+mq($max-width: 1359px)
+				padding-right: 35px
+			+mq($max-width: 767px)
+				padding-right: 47px
+			+mq($max-width: 374px)
+				padding-right: 0px
+			h4
+				font-weight: 400
+				font-size: 20px
+				line-height: 125.69%
+			svg
+				+mq($max-width: 767px)
+					position: absolute
+					right: 10px
+					top: 15px
+				+mq($max-width: 374px)
+					right: 10px
+					top: 15px
+		.katalog__category
+			display: flex
+			align-items: center
+			gap: 10px
+			&-item
+				background: #1C1C1C
+				border-radius: 4px
+				height: 27px
+				align-items: center
+				display: flex
+				padding: 0 14px
+				font-weight: 400
+				font-size: 14px
+				line-height: 64.19%
+				color: #D5D5D5
