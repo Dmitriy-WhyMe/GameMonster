@@ -10,13 +10,15 @@
 				$(".header__middle").removeClass("header__mobile");
 			}
 		})
-		//Hiden menu to scroll
+		//Hide the menu when scrolling
 		$(window).scroll(function() {
 			let scroll = $(this).scrollTop();
 			if( scroll > 500 ) {
 				$('#menu-bar').prop('checked', false);
-				$(".header__middle").css({"display": "none"});
-				$(".header__middle").removeClass("header__mobile");
+				if($(window).width() < 1279){
+					$(".header__middle").css({"display": "none"});
+					$(".header__middle").removeClass("header__mobile");
+				}
 			}
 		});
 		//Animation
