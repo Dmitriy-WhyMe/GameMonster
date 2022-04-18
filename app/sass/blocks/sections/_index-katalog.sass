@@ -11,6 +11,8 @@
 		.katalog__item
 			position: relative
 			max-width: 339px
+			overflow: hidden
+			border-radius: 15px
 			+mq($max-width: 1679px)
 				max-width: 320px
 			+mq($max-width: 1360px)
@@ -33,6 +35,9 @@
 				height: 258px
 				border-radius: 15px
 				clip-path: path('M13.56 0.625488C6.07103 0.625488 0 6.18001 0 13.0318V245.488C0 252.339 6.071 257.894 13.56 257.894H214.511C222 257.894 228.071 252.339 228.071 245.488V209.136C228.071 198.643 236.578 190.136 247.071 190.136H325.44C332.929 190.136 339 184.582 339 177.73V13.0318C339 6.18001 332.929 0.625488 325.44 0.625488H13.56Z')
+				transition: 1s
+				&:hover
+					transform: scale(1.1)
 				+mq($max-width: 1679px)
 					max-width: 320px
 					width: 100%	

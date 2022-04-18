@@ -10,11 +10,11 @@ html
 		main.page-container
 			.container 
 				section.main-slider 
-					.main-slider__left 
+					.main-slider__left(data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500")
 						img.main-slider__absolute(src=img+"top-slider-left-a.png", alt="")
 						img(src=img+"top-slider-left.png", alt="")
 						h2 Страшные скидки <br>в честь открытия
-					.main-slider__right
+					.main-slider__right(data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500")
 						.swiper-container(class="mySwiper")
 							.swiper-wrapper
 								.swiper-slide
@@ -78,7 +78,7 @@ html
 				section.fortune 
 					h3.title-block Испытай удачу
 					.flex 
-						.fortune__item
+						.fortune__item(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500")
 							img.fortune__img(src=img+"fortune/Union.png", alt="")
 							img.fortune__absolute-1(src=img+"fortune/Mask Group (2).png", alt="")
 							.fortune__title-1 EPIC
@@ -90,7 +90,7 @@ html
 							.fortune__price
 								.fortune__price-main $ 800
 								.fortune__price-old $ 800
-						.fortune__item
+						.fortune__item(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800")
 							img.fortune__img(src=img+"fortune/Union (1).png", alt="")
 							img.fortune__absolute-2(src=img+"fortune/Mask Group (1).png", alt="")
 							.fortune__title-2 COMMON
@@ -102,7 +102,7 @@ html
 							.fortune__price
 								.fortune__price-main $ 800
 								.fortune__price-old $ 800
-						.fortune__item
+						.fortune__item(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1100")
 							img.fortune__img(src=img+"fortune/Union (2).png", alt="")
 							img.fortune__absolute-3(src=img+"fortune/Mask Group.png", alt="")
 							.fortune__title-3 LEGEND
@@ -305,28 +305,28 @@ html
 						a(href="#") Все материалы
 					.news
 						.news-left
-							.news__item(class="news-1")
+							.news__item(class="news-1" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="400")
 								img.news__img-stock(src=img+"news/CFPH0vifuk.png", alt="")
 								.news__txt
 									a.news__title(href="#") The Division раздают бесплатно
 									.news__category Скидки и акции
-							.news__item(class="news-2")
+							.news__item(class="news-2" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700")
 								img.news__img-stock(src=img+"news/s-l1600.jpg", alt="")
 								.news__txt
 									a.news__title(href="#") Apple готовит не только свои процессоры, но и видеокарты
 									.news__category Технологии
-							.news__item(class="news-3")
+							.news__item(class="news-3" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000")
 								img.news__img-stock(src=img+"news/r_M5y7I93s.jpg", alt="")
 								.news__txt
 									a.news__title(href="#") Microsoft Flight Simulator. Дорога в небо открыта каждому
 									.news__category Симуляторы
-							.news__item(class="news-4")
+							.news__item(class="news-4" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1300")
 								img.news__img-stock(src=img+"news/2.jpg", alt="")
 								.news__txt
 									a.news__title(href="#") Выбор редации: лучшие игры о космосе
 									.news__category Подборки
 						.news-right
-							.news__item(class="news__mobile")
+							.news__item(class="news__mobile" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1600")
 								img.news__img-stock(src=img+"news/5143934543e17c4d98df603e308d1990-12-scaled.jpg", alt="")
 								.news__icons 
 									<svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.75841 6.67662C8.86235 6.67662 7.4753 5.64911 6.01461 5.68625C4.08747 5.71101 2.31991 6.8128 1.32566 8.55833C-0.675127 12.0618 0.810117 17.2365 2.7618 20.0838C3.71923 21.4703 4.84851 23.0301 6.34603 22.9806C7.78217 22.9187 8.32226 22.0398 10.0653 22.0398C11.796 22.0398 12.287 22.9806 13.8091 22.9435C15.3557 22.9187 16.3377 21.5322 17.2828 20.1333C18.3753 18.524 18.8294 16.9641 18.854 16.8775C18.8172 16.8651 15.8467 15.7138 15.8099 12.2475C15.7853 9.35063 18.1543 7.96411 18.2648 7.90221C16.9146 5.90908 14.8401 5.68625 14.1159 5.63673C12.2256 5.48818 10.6422 6.67662 9.75841 6.67662ZM12.9498 3.75502C13.7477 2.78941 14.2755 1.44003 14.1282 0.103027C12.9867 0.152546 11.6119 0.870565 10.7895 1.83618C10.053 2.69037 9.41471 4.06452 9.58656 5.37676C10.8509 5.4758 12.152 4.72064 12.9498 3.75502Z" fill="white" fill-opacity="0.3"/></svg>
@@ -335,22 +335,22 @@ html
 									a.news__title(href="#") Релиз мобильного приложения по игре Ведьмак 3
 									.news__category Mobile
 							.news__smalls 
-								.news__small
+								.news__small(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1900")
 									img(src=img+"news/Rectangle 32.png", alt="")
 									.news__txt
 										a.news__title(href="#") В Gotham Knights по улицам будут ходить мирные жители со своим распорядком дня
 										.news__category RPG
-								.news__small
+								.news__small(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2200")
 									img(src=img+"news/Rectangle 32 (1).png", alt="")
 									.news__txt
 										a.news__title(href="#") В Gotham Knights по улицам будут ходить мирные жители со своим распорядком дня
 										.news__category RPG
-								.news__small
+								.news__small(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2500")
 									img(src=img+"news/Rectangle 32.png", alt="")
 									.news__txt
 										a.news__title(href="#") В Gotham Knights по улицам будут ходить мирные жители со своим распорядком дня
 										.news__category RPG
-							.news__video 
+							.news__video(data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="2800")
 								img(src=img+"news/Rectangle 32 (2).png", alt="")
 								.news__video-txt 
 									p Показан геймплей The Witcher: Monster Slayer
@@ -362,7 +362,7 @@ html
 						a(href="#") Релиз PC-версии Spelunky 2 состоится 29 сентября
 						a(href="#") Анонсирована The Witcher: Monster Slayer — мобильная игра по «Ведьмаку»
 				section.bonuses
-					.bonuses__referals 
+					.bonuses__referals
 						img.bonuses__stock(src=img+"bonuses/Mask Group (2).png", alt="")
 						img.bonuses__absolute(src=img+"bonuses/Mask Group.png", alt="")
 						img.bonuses__mobile(src=img+"bonuses/mob (2).png", alt="")

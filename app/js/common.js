@@ -1,5 +1,6 @@
 (function ($) {
 	$(document).ready(function () {
+		//Mobile menu
 		$('#menu-bar').on('click', function () {
 			if ( $(this).is(':checked') ) {
 				$(".header__middle").css({"display": "flex"});
@@ -9,7 +10,18 @@
 				$(".header__middle").removeClass("header__mobile");
 			}
 		})
-
+		//Hiden menu to scroll
+		$(window).scroll(function() {
+			let scroll = $(this).scrollTop();
+			if( scroll > 500 ) {
+				$('#menu-bar').prop('checked', false);
+				$(".header__middle").css({"display": "none"});
+				$(".header__middle").removeClass("header__mobile");
+			}
+		});
+		//Animation
+		AOS.init();
+		//Slider Index-page
 		var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
 			spaceBetween: 500,
