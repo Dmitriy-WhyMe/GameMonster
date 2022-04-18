@@ -1,0 +1,105 @@
+.catalog-filters
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +mq($max-width: 767px)
+        flex-direction: column-reverse
+        gap: 20px
+    &__item
+        display: flex
+        align-items: center
+        gap: 8px
+        +mq($max-width: 374px)
+            gap: 5px
+    &__all
+        height: 36px
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.25px
+        padding-left: 16px
+        padding-right: 16px
+        border: 1px solid #313131
+        border-radius: 37px
+        display: flex
+        align-items: center
+        +mq($max-width: 374px)
+            font-size: 12px
+            padding-left: 12px
+            padding-right: 12px
+        input
+            display: none
+        label
+            cursor: pointer
+            display: flex
+            align-items: center
+            gap: 8px
+    &__system
+        height: 36px
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.25px
+        padding-left: 16px
+        padding-right: 16px
+        border: 1px solid #313131
+        border-radius: 37px
+        display: flex
+        align-items: center
+        +mq($max-width: 374px)
+            font-size: 12px
+            padding-left: 12px
+            padding-right: 12px
+        input
+            display: none
+        label
+            cursor: pointer
+            display: flex
+            align-items: center
+            gap: 8px
+    &__price
+        height: 36px
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.25px
+        padding-left: 16px
+        padding-right: 16px
+        border: 1px solid #313131
+        border-radius: 37px
+        display: flex
+        align-items: center
+        +mq($max-width: 374px)
+            font-size: 12px
+            padding-left: 12px
+            padding-right: 12px
+        input
+            display: none
+        label
+            cursor: pointer
+            display: flex
+            align-items: center
+            gap: 8px
+    &__search
+        position: relative
+        max-width: 339px
+        width: 100%
+        +mq($max-width: 767px)
+            max-width: 100%
+        input
+            height: 53px
+            width: 100%
+            font-weight: 400
+            font-size: 16px
+            line-height: 125.69%
+            letter-spacing: -0.01em
+            color: #757575
+            background: #222222
+            border-radius: 9px
+            padding: 0 23px
+        svg
+            position: absolute
+            right: 23px
+            top: 0
+            bottom: 0
+            margin: auto

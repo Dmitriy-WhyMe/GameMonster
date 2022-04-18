@@ -24,6 +24,15 @@
 		//Animation
 		AOS.init();
 		//Slider Index-page
+		var swiper = new Swiper(".mySwiper-2", {
+			slidesPerView: 1,
+			spaceBetween: 50,
+			loop: true,
+			grabCursor: true,
+			autoplay: {
+				delay: 5000,
+			},
+		});
 		var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
 			spaceBetween: 500,

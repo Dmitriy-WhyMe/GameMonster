@@ -1,0 +1,278 @@
+$item-visible-width-1920: 247px
+$item-visible-width-1440: 236px
+$item-visible-width-1366: 224px
+$item-visible-width-1280: 209px
+.catalog-discounts
+    position: relative
+    margin-bottom: 60px
+    +mq($max-width: 1279px)
+        margin-bottom: 20px
+    .mySwiper-2
+        margin-top: 20px
+        display: none
+        +mq($max-width: 1279px)
+            display: block
+        .item-visible-1, .item-visible-2, .item-visible-3
+            position: relative
+            left: 0
+            right: 0
+            top: 0
+            display: block
+            max-width: 100%
+            clip-path: none
+            height: 350px
+            +mq($max-width: 413px)
+                height: 200px
+            .catalog-discounts__txt
+                .catalog-discounts__title
+                    +mq($max-width: 767px)
+                        font-size: 40px
+                    +mq($max-width: 413px)
+                        font-size: 36px
+                    +mq($max-width: 374px)
+                        font-size: 30px
+                .catalog-discounts__price
+                    +mq($max-width: 767px)
+                        justify-content: space-between
+                    &-main
+                        +mq($max-width: 413px)
+                            font-size: 28px
+                    &-old
+                        +mq($max-width: 413px)
+                            font-size: 28px
+        .item-visible-2
+            .catalog-discounts__price
+                flex-direction: row !important
+        
+    .item-main
+        clip-path: path('M775 25C775 11.1929 763.807 0 750 0H25C11.1929 0 0 11.1929 0 25V479.5C0 493.307 11.1929 504.5 25 504.5H937C950.807 504.5 962 493.307 962 479.5V274C962 260.193 950.807 249 937 249H800C786.193 249 775 237.807 775 224V25Z')
+        max-width: 962px
+        height: 504px
+        width: 100%
+        border-radius: 15px
+        position: relative
+        +mq($max-width: 1441px)
+            max-width: 921px
+            clip-path: path('M742.708 25C742.708 11.1929 731.982 0 718.75 0H23.9583C10.7265 0 0 11.1929 0 25V479.5C0 493.307 10.7265 504.5 23.9583 504.5H897.958C911.19 504.5 921.917 493.307 921.917 479.5V274C921.917 260.193 911.19 249 897.958 249H766.667C753.435 249 742.708 237.807 742.708 224V25Z')
+        +mq($max-width: 1439px)
+            max-width: 872px
+            clip-path: path('M702.882 25C702.882 11.1929 692.731 0 680.208 0H22.6736C10.1513 0 0 11.1929 0 25V479.5C0 493.307 10.1513 504.5 22.6736 504.5H849.807C862.329 504.5 872.481 493.307 872.481 479.5V274C872.481 260.193 862.329 249 849.807 249H725.556C713.033 249 702.882 237.807 702.882 224V25Z')
+        +mq($max-width: 1359px)
+            max-width: 815px
+            clip-path: path('M656.597 25C656.597 11.1929 647.114 0 635.417 0H21.1806C9.48286 0 0 11.1929 0 25V479.5C0 493.307 9.48284 504.5 21.1805 504.5H793.847C805.545 504.5 815.028 493.307 815.028 479.5V274C815.028 260.193 805.545 249 793.847 249H677.778C666.08 249 656.597 237.807 656.597 224V25Z')
+        +mq($max-width: 1279px)
+            clip-path: none
+            max-width: 100%
+            height: 400px
+        +mq($max-width: 413px)
+            height: 250px
+        img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 15px
+        .catalog-discounts__txt
+            position: absolute
+            left: 50px
+            bottom: 50px
+            display: flex
+            gap: 42px
+            align-items: flex-end
+            +mq($max-width: 767px)
+                left: 20px
+                bottom: 20px
+                right: 20px
+                flex-direction: column
+                align-items: baseline
+                gap: 20px
+            +mq($max-width: 413px)
+                gap: 10px
+            .catalog-discounts__title
+                font-weight: 700
+                font-size: 87.8991px
+                line-height: 75px
+                max-width: 344px
+                +mq($max-width: 767px)
+                    font-size: 50px
+                    line-height: 120%
+                +mq($max-width: 413px)
+                    font-size: 40px
+                +mq($max-width: 374px)
+                    font-size: 30px
+            .flex-column
+                display: flex
+                flex-direction: column
+                gap: 20px
+                +mq($max-width: 374px)
+                    gap: 10px
+                .catalog-discounts__desc
+                    font-weight: 500
+                    font-size: 33.4604px
+                    line-height: 91.5%
+                    max-width: 167px
+                    +mq($max-width: 767px)
+                        max-width: 100%
+                    +mq($max-width: 413px)
+                        font-size: 28px
+                    
+                .btn
+                    max-width: 171px
+                    background: #F59502
+                    backdrop-filter: blur(24px)
+                    border-radius: 12px
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 125.69%
+                    height: 62px
+    .item-visible-1
+        position: absolute
+        top: 0
+        right: 25px + $item-visible-width-1920
+        max-width: 370px
+        width: 100%
+        height: 225px
+        border-radius: 15px
+        +mq($max-width: 1441px)
+            max-width: 354px
+            right: 25px + $item-visible-width-1440
+        +mq($max-width: 1439px)
+            max-width: 335px
+            right: 25px + $item-visible-width-1366
+        +mq($max-width: 1359px)
+            max-width: 313px
+            right: 25px + $item-visible-width-1280
+            +mq($max-width: 1279px)
+                display: none
+        img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 15px
+        .catalog-discounts__txt
+            position: absolute
+            right: 20px
+            left: 20px
+            bottom: 20px
+            display: flex
+            flex-direction: column
+            gap: 15px
+            .catalog-discounts__title
+                font-weight: 400
+                font-size: 42.2567px
+                line-height: 95.5%
+            .catalog-discounts__price
+                display: flex
+                align-items: center
+                gap: 15px
+                &-main
+                    font-weight: 700
+                    font-size: 33.4604px
+                    line-height: 29px
+                &-old
+                    font-weight: 400
+                    font-size: 33.4604px
+                    line-height: 85.5%
+                    color: #AAAAAA
+                    text-decoration: line-through
+    .item-visible-2
+        position: absolute
+        top: 0
+        right: 0
+        width: 100%
+        max-width: 247px
+        height: 300px
+        border-radius: 15px
+        +mq($max-width: 1441px)
+            max-width: $item-visible-width-1440
+        +mq($max-width: 1439px)
+            max-width: $item-visible-width-1366
+        +mq($max-width: 1359px)
+            max-width: $item-visible-width-1280
+        +mq($max-width: 1279px)
+            display: none
+        img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 15px
+        .catalog-discounts__txt
+            position: absolute
+            left: 20px
+            right: 20px
+            bottom: 20px
+            display: flex
+            flex-direction: column
+            gap: 15px
+            .catalog-discounts__title
+                font-weight: 400
+                font-size: 42.2567px
+                line-height: 95.5%
+            .catalog-discounts__price
+                display: flex
+                gap: 15px
+                flex-direction: column
+                &-main
+                    font-weight: 700
+                    font-size: 33.4604px
+                    line-height: 29px
+                &-old
+                    font-weight: 400
+                    font-size: 33.4604px
+                    line-height: 85.5%
+                    color: #AAAAAA
+                    text-decoration: line-through
+    .item-visible-3
+        position: absolute
+        bottom: 0
+        right: 0
+        max-width: 454px
+        width: 100%
+        height: 257px
+        border-radius: 15px
+        clip-path: path('M183 25C183 11.1929 171.807 0 158 0H25C11.1929 0 0 11.1929 0 25V232.5C0 246.307 11.1929 257.5 25 257.5H429C442.807 257.5 454 246.307 454 232.5V100C454 86.1929 442.807 75 429 75H208C194.193 75 183 63.8071 183 50V25Z')
+        +mq($max-width: 1441px)
+            max-width: 435px
+            clip-path: path('M176.292 25C176.292 11.1929 165.099 0 151.292 0H24.875C11.6432 0 0.916687 11.1929 0.916687 25V232.5C0.916687 246.307 11.6432 257.5 24.875 257.5H412.042C425.274 257.5 436 246.307 436 232.5V100C436 86.1929 424.807 75 411 75H200.25C187.018 75 176.292 63.8071 176.292 50V25Z')
+        +mq($max-width: 1439px)
+            max-width: 411px
+            clip-path: path('M166.218 25C166.218 11.1929 155.025 0 141.218 0H22.9209C10.3986 0 0.247253 11.1929 0.247253 25V232.5C0.247253 246.307 10.3986 257.5 22.9209 257.5H389.326C401.849 257.5 412 246.307 412 232.5V100C412 86.1929 400.807 75 387 75H188.892C176.369 75 166.218 63.8071 166.218 50V25Z')
+        +mq($max-width: 1359px)
+            max-width: 384px
+            clip-path: path('M155.403 25C155.403 11.1929 144.21 0 130.403 0H21.5417C9.844 0 0.361145 11.1929 0.361145 25V232.5C0.361145 246.307 9.84401 257.5 21.5417 257.5H363.819C375.517 257.5 385 246.307 385 232.5V100C385 86.1929 373.807 75 360 75H176.583C164.886 75 155.403 63.8071 155.403 50V25Z')
+        +mq($max-width: 1279px)
+            display: none
+        img
+            max-width: 100%
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 15px
+        .catalog-discounts__txt
+            position: absolute
+            left: 20px
+            right: 20px
+            bottom: 20px
+            display: flex
+            flex-direction: column
+            gap: 15px
+            .catalog-discounts__title
+                font-weight: 400
+                font-size: 42.2567px
+                line-height: 95.5%
+            .catalog-discounts__price
+                display: flex
+                align-items: center
+                gap: 15px
+                &-main
+                    font-weight: 700
+                    font-size: 33.4604px
+                    line-height: 29px
+                &-old
+                    font-weight: 400
+                    font-size: 33.4604px
+                    line-height: 85.5%
+                    color: #AAAAAA
+                    text-decoration: line-through

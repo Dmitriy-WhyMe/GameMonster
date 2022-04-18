@@ -90,3 +90,58 @@ a
 .swiper-pagination-bullet-active
 	opacity: 1
 	background: rgba(255, 255, 255, 0.6)
+
+.pagination
+	margin: 40px auto
+	display: flex
+	justify-content: center
+	align-items: center
+	gap: 15px
+	+mq($max-width: 767px)
+		margin: auto
+		margin-top: 20px
+		margin-bottom: 0px
+	&__start
+		font-weight: 400
+		font-size: 16px
+		line-height: 20px
+		color: #949494
+		+mq($max-width: 413px)
+			display: none
+		&:hover
+			color: white
+			transition: 0.3s
+	&__end
+		font-weight: 400
+		font-size: 16px
+		line-height: 20px
+		color: #949494
+		+mq($max-width: 413px)
+			display: none
+		&:hover
+			color: white
+			transition: 0.3s
+	.flex
+		display: flex
+		align-items: center
+		gap: 5px
+		a
+			font-weight: 400
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: 0.25px
+			color: #949494
+			height: 30px
+			width: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 5px
+			&:hover
+				background: #1C1C1C
+				color: white
+				transition: 0.3s
+		.active
+			color: white
+			background: #1C1C1C
+			border-radius: 5px
