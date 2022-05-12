@@ -1,0 +1,411 @@
+.bonuses
+    margin-top: 40px
+    position: relative
+    +mq($max-width: 767px)
+        display: flex
+        gap: 20px
+        flex-direction: column
+        margin-top: 20px
+    &__stock
+        +mq($max-width: 767px)
+            display: none
+    &__mobile
+        display: none
+        +mq($max-width: 767px)
+            display: block
+            max-width: 100%
+            width: 100%
+            border-radius: 15px
+    &__absolute
+        position: absolute
+        +mq($max-width: 1279px)
+            display: none
+    .btn
+        max-width: 175px
+        height: 62px
+    &__questions
+        margin-top: -70px
+        position: relative
+        +mq($max-width: 1279px)
+            margin-top: -45px
+        +mq($max-width: 1023px)
+            margin-top: -30px
+        +mq($max-width: 819px)
+            margin-top: -25px
+        +mq($max-width: 767px)
+            margin-top: 0px
+        .bonuses__title
+            position: absolute
+            left: 45px
+            bottom: 45px
+            font-weight: 900
+            font-size: 60px
+            line-height: 95.69%
+            z-index: 4
+            +mq($max-width: 1359px)
+                font-size: 50px
+            +mq($max-width: 1279px)
+                font-size: 38px
+                left: 25px
+                bottom: 25px
+            +mq($max-width: 1023px)
+                top: 65px
+                left: 10px
+            +mq($max-width: 767px)
+                font-size: 7vw
+                top: 10px
+            +mq($max-width: 374px)
+                font-size: 6vw
+        .bonuses__stock
+            max-width: 100%
+            width: 100%
+        .bonuses__absolute
+            position: absolute
+            top: -191px
+            left: -194px
+            z-index: 2
+            +mq($max-width: 1679px)
+                top: -190px
+                left: -200px
+                max-width: 1636px
+            +mq($max-width: 1439px)
+                top: -172px
+                left: -170px
+                max-width: 1511px
+            +mq($max-width: 1359px)
+                top: -165px
+                left: -167px
+                max-width: 1430px
+        .bonuses__form
+            max-width: 338px
+            width: 100%
+            display: flex
+            gap: 10px
+            align-items: end
+            flex-direction: column
+            +mq($max-width: 1279px)
+                max-width: 280px
+            +mq($max-width: 1023px)
+                max-width: 100%
+                flex-direction: row
+            +mq($max-width: 767px)
+                flex-direction: column
+                gap: 5px
+        form
+            display: flex
+            position: absolute
+            right: 45px
+            bottom: 45px
+            gap: 28px
+            z-index: 4
+            align-items: end
+            +mq($max-width: 1279px)
+                right: 25px
+                bottom: 25px
+            +mq($max-width: 1023px)
+                right: 10px
+                bottom: 10px
+                gap: 10px
+            +mq($max-width: 767px)
+                flex-direction: column-reverse
+                margin: 0 auto
+                left: 10px
+                right: 10px
+                gap: 5px
+            .btn
+                min-width: 175px
+                background: rgba(0, 0, 0, 0.17)
+                backdrop-filter: blur(24px)
+                border-radius: 12px
+                font-weight: 500
+                font-size: 18px 
+                margin: 0 auto
+                +mq($max-width: 413px)
+                    height: 45px
+                
+            textarea
+                max-width: 100%
+                width: 100%
+                background: rgba(193, 193, 193, 0.22)
+                backdrop-filter: blur(24px)
+                border-radius: 12px
+                padding: 22px
+                font-weight: 400
+                font-size: 16px
+                line-height: 125.69%
+                color: rgba(255, 255, 255, 0.7)
+                min-height: 204px
+                margin-top: 16px
+                resize: none
+                +mq($max-width: 1359px)
+                    min-height: 160px
+                +mq($max-width: 1279px)
+                    min-height: 135px
+                +mq($max-width: 767px)
+                    margin-top: 0
+                    min-height: 100px
+                +mq($max-width: 359px)
+                    min-height: auto
+                    max-height: 65px
+                    padding: 8px
+            input
+                max-width: 100%
+                width: 100%
+                height: 62px
+                background: rgba(193, 193, 193, 0.22)
+                backdrop-filter: blur(24px)
+                border-radius: 12px
+                padding: 0 22px
+                font-weight: 400
+                font-size: 16px
+                line-height: 125.69%
+                color: rgba(255, 255, 255, 0.7)
+                +mq($max-width: 413px)
+                    height: 45px
+                +mq($max-width: 359px)
+                    padding: 0 8px
+                &::placeholder
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 125.69%
+                    color: rgba(255, 255, 255, 0.7)
+    &__referals
+        max-width: 772px
+        width: 100%
+        position: relative
+        z-index: 2
+        .bonuses__title
+            position: absolute
+            left: 45px
+            top: 45px
+            font-weight: 900
+            font-size: 60px
+            line-height: 95.69%
+            max-width: 433px
+            +mq($max-width: 1359px)
+                font-size: 55px
+            +mq($max-width: 1279px)
+                font-size: 38px
+                left: 25px
+                top: 25px
+                max-width: 395px
+            +mq($max-width: 1023px)
+                top: 10px
+                left: 10px
+            +mq($max-width: 767px)
+                font-size: 7vw
+            +mq($max-width: 374px)
+                font-size: 6vw
+                line-height: 110%
+        .bonuses__desk
+            position: absolute
+            left: 45px
+            top: 175px
+            font-weight: 500
+            font-size: 22.7121px
+            line-height: 131.19%
+            color: rgba(255, 255, 255, 0.8)
+            max-width: 343px
+            +mq($max-width: 1279px)
+                top: 110px
+                left: 25px
+            +mq($max-width: 1023px)
+                top: 90px
+                left: 10px
+            +mq($max-width: 767px)
+                top: 45px
+            +mq($max-width: 374px)
+                font-size: 6vw
+                line-height: 100%
+        .btn
+            position: absolute
+            left: 45px
+            top: 275px
+            background: rgba(0, 0, 0, 0.17)
+            backdrop-filter: blur(24px)
+            border-radius: 12px
+            font-weight: 500
+            font-size: 18px
+            +mq($max-width: 1279px)
+                left: 25px
+            +mq($max-width: 1023px)
+                left: 10px
+                top: 165px
+            +mq($max-width: 767px)
+                top: unset
+                bottom: 10px
+            +mq($max-width: 413px)
+                height: 45px
+        .bonuses__stock
+            max-width: 772px
+            width: 100%
+            +mq($max-width: 1679px)
+                max-width: 732px
+            +mq($max-width: 1439px)
+                max-width: 702px
+            +mq($max-width: 1359px)
+                max-width: 652px
+            +mq($max-width: 1279px)
+                max-width: 512px
+            +mq($max-width: 1023px)
+                max-width: 402px
+            +mq($max-width: 819px)
+                max-width: 372px
+        .bonuses__absolute
+            right: -55px
+            top: -37px
+            +mq($max-width: 1679px)
+                right: -14px
+                top: -35px
+                max-width: 445px
+            +mq($max-width: 1439px)
+                right: 20px
+                top: -33px
+                max-width: 427px
+            +mq($max-width: 1359px)
+                right: 71px
+                top: -33px
+                max-width: 399px
+            
+    &__discounts
+        position: absolute
+        right: 0
+        top: 0
+        +mq($max-width: 767px)
+            position: relative
+        .bonuses__title
+            position: absolute
+            left: 45px
+            top: 45px
+            font-weight: 900
+            font-size: 60px
+            line-height: 95.69%
+            max-width: 433px
+            +mq($max-width: 1359px)
+                font-size: 55px
+            +mq($max-width: 1279px)
+                font-size: 38px
+                left: 25px
+                top: 25px
+                max-width: 340px
+            +mq($max-width: 1023px)
+                top: 10px
+                left: 10px
+            +mq($max-width: 767px)
+                font-size: 7vw
+            +mq($max-width: 374px)
+                font-size: 6vw
+                line-height: 110%
+        .bonuses__desk
+            position: absolute
+            left: 180px
+            bottom: 180px
+            font-weight: 500
+            font-size: 22.7121px
+            line-height: 131.19%
+            color: rgba(255, 255, 255, 0.8)
+            max-width: 190px
+            z-index: 3
+            +mq($max-width: 1279px)
+                left: 110px
+                bottom: 110px
+            +mq($max-width: 1023px)
+                left: 80px
+                bottom: 80px
+            +mq($max-width: 767px)
+                left: 10px
+            +mq($max-width: 413px)
+                bottom: 65px
+            +mq($max-width: 374px)
+                font-size: 6vw
+                line-height: 100%
+        .flex
+            align-items: center
+            position: absolute
+            gap: 28px
+            right: 45px
+            bottom: 45px
+            z-index: 3
+            +mq($max-width: 1279px)
+                right: 25px
+                bottom: 25px
+                gap: 10px
+            +mq($max-width: 1023px)
+                right: 10px
+                bottom: 10px
+            +mq($max-width: 767px)
+                left: 10px
+            input
+                min-width: 338px
+                width: 100%
+                height: 62px
+                background: rgba(193, 193, 193, 0.22)
+                backdrop-filter: blur(24px)
+                border-radius: 12px
+                padding: 0 22px
+                font-weight: 400
+                font-size: 16px
+                line-height: 125.69%
+                color: rgba(255, 255, 255, 0.7)
+                +mq($max-width: 1439px)
+                    min-width: auto
+                +mq($max-width: 1279px)
+                    max-width: 200px
+                +mq($max-width: 1023px)
+                    max-width: 145px
+                +mq($max-width: 767px)
+                    max-width: 100%
+                +mq($max-width: 413px)
+                    height: 45px
+                +mq($max-width: 359px)
+                    padding: 0 8px
+                &::placeholder
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 125.69%
+                    color: rgba(255, 255, 255, 0.7)
+            .btn
+                background: #F55902
+                backdrop-filter: blur(24px)
+                border-radius: 12px
+                min-width: 175px
+                font-weight: 500
+                font-size: 18px
+                +mq($max-width: 1279px)
+                    min-width: 150px
+                +mq($max-width: 819px)
+                    min-width: 120px
+                    font-size: 16px
+                +mq($max-width: 413px)
+                    height: 45px
+
+        .bonuses__stock
+            max-width: 768px
+            width: 100%
+            +mq($max-width: 1679px)
+                max-width: 728px
+            +mq($max-width: 1439px)
+                max-width: 698px
+            +mq($max-width: 1359px)
+                max-width: 648px
+            +mq($max-width: 1279px)
+                max-width: 508px
+            +mq($max-width: 1023px)
+                max-width: 398px
+            +mq($max-width: 819px)
+                max-width: 368px
+        .bonuses__absolute
+            right: -47px
+            top: -22px
+            +mq($max-width: 1679px)
+                right: -45px
+                top: -21px
+                max-width: 155px
+            +mq($max-width: 1439px)
+                right: -45px
+                top: -20px
+                max-width: 150px
+            +mq($max-width: 1359px)
+                right: -41px
+                top: -22px
+                max-width: 141px

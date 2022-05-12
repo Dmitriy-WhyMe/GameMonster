@@ -1,0 +1,368 @@
+header > .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+.main-menu-btn-icon
+    +mq($max-width: 1279px)
+        display: block
+.header
+    margin-top: 31px
+    margin-bottom: 23px
+    +mq($max-width: 767px)
+        margin-top: 8px
+        margin-bottom: 20px
+    &__logo
+        display: flex
+        align-items: center
+        gap: 17px
+        margin-right: 41px
+        +mq($max-width: 1365px)
+            margin-right: 25px
+        +mq($max-width: 1279px)
+            margin-left: 64px
+        +mq($max-width: 767px)
+            margin-left: 40px
+        &-txt
+            font-weight: 700
+            font-size: 18.43px
+            line-height: 22px
+            font-style: italic
+            max-width: 77px
+    &__middle
+        display: flex
+        align-items: center
+        +mq($max-width: 1279px)
+            display: none
+    &__mobile
+        z-index: 11
+        position: absolute
+        left: 30px
+        top: 70px
+        background: #161616
+        border-radius: 21px
+        flex-direction: column
+        max-width: 422px
+        width: 100%
+        padding: 23px
+        align-items: baseline
+        +mq($max-width: 767px)
+            padding-left: 16px
+            padding-right: 16px
+            padding-top: 10px
+            max-width: calc( 100% - 30px )
+            left: 0
+            right: 0
+            margin: 0 auto
+        &-btn
+            display: none
+            +mq($max-width: 1279px)
+                display: block
+                position: absolute
+            
+    &__menu
+        +mq($max-width: 1279px)
+            margin-top: 64px
+            padding-left: 14px
+        +mq($max-width: 767px)
+            margin-top: 60px
+    &__separator
+        color: #7C7C7C
+        ont-weight: 500
+        font-size: 16px
+        line-height: 125.69%
+        +mq($max-width: 767px)
+            display: none
+    &__language
+        align-items: center
+        gap: 3px
+        margin-right: 70px
+        .header__separator
+            display: block
+        +mq($max-width: 1365px)
+            margin-right: 25px
+        +mq($max-width: 1279px)
+            position: absolute
+            top: 123px
+            left: 208px
+        +mq($max-width: 767px)
+            top: 113px
+            right: 30px
+            left: unset
+            margin-right: 0
+        a
+            color: #7C7C7C
+            font-weight: 500
+            font-size: 16px
+            line-height: 125.69%
+            +mq($max-width: 1279px)
+                font-size: 20px
+        a.active
+            color: white
+    &__authorization
+        align-items: center
+        gap: 3px
+        +mq($max-width: 767px)
+            flex-direction: column
+        a
+            color: white
+            font-weight: 500
+            font-size: 16px
+            line-height: 125.69%
+            +mq($max-width: 767px)
+                display: flex
+                align-items: center
+                justify-content: center
+                background: #F59502
+                border-radius: 6px
+                height: 31px
+                min-width: 72px
+                width: 100%
+        a.header__out
+            +mq($max-width: 767px)
+                display: none
+    &__currency
+        margin-right: 33px
+        align-items: center
+        gap: 8px
+        +mq($max-width: 1365px)
+            margin-right: 25px
+        +mq($max-width: 1279px)
+            position: absolute
+            top: 87px
+            left: 208px
+        +mq($max-width: 767px)
+            right: 30px
+            left: unset
+            margin-right: 0
+            top: 70px
+        a
+            color: #7C7C7C
+            font-weight: 500
+            font-size: 16px
+            line-height: 125.69%
+            +mq($max-width: 1279px)
+                font-size: 20px
+        a.active
+            color: white
+    &__search
+        position: relative
+        margin-right: 10px
+        +mq($max-width: 1279px)
+            position: absolute
+            top: 23px
+            background: #000000
+            border-radius: 9px
+            max-width: 376px
+            width: 100%
+        +mq($max-width: 767px)
+            top: 10px
+            max-width: calc( 100% - 32px )
+        svg
+            position: absolute
+            left: 14px
+            top: 0
+            bottom: 0
+            margin:  auto
+        input
+            padding-left: 42px
+            padding-right: 5px
+            height: 42px
+            border: none
+            background: inherit
+            color: #C9C9C9
+            font-weight: 400
+            font-size: 16px
+            line-height: 125.69%
+            letter-spacing: -0.01em
+            border-radius: 9px
+            max-width: 190px
+            &:focus-within
+                color: white
+                background: #101010
+            +mq($max-width: 1279px)
+                max-width: 100%
+                width: 100%
+            
+
+
+
+
+.navbar
+    margin-right: 106px
+    +mq($max-width: 1440px)
+        margin-right: 75px
+    +mq($max-width: 1439px)
+        margin-right: 60px
+    +mq($max-width: 1365px)
+            margin-right: 45px
+    
+    ul
+        display: flex
+        align-items: center
+        gap: 35px
+        +mq($max-width: 1440px)
+            gap: 25px
+        +mq($max-width: 1279px)
+            gap: 25px
+            flex-direction: column
+        li
+            a
+                font-weight: 500
+                font-size: 16px
+                line-height: 125.69%
+            a.header__menu-community
+                margin-left: 60px
+                display: flex
+                align-items: center
+                gap: 13px
+                color: #F59502
+                +mq($max-width: 1366px)
+                    margin-left: 0px
+#menu-bar
+	display: none
+.header__menu label
+    font-size: 20px
+    color: #333
+    cursor: pointer
+    display: none
+header .navbar ul li
+    position: relative
+header .navbar ul li ul
+    position: absolute
+    left: 0
+    top: 57px
+    width: 200px
+    z-index: 3
+    background: white
+    display: none
+header .navbar ul li ul li
+    width: 100%
+    border-top: 1px solid #08B84E
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul
+    display: initial
+.main-menu-btn-icon,
+.main-menu-btn-icon:before,
+.main-menu-btn-icon:after
+    position: absolute
+    height: 4px
+    width: 30px
+    background: white
+    -webkit-transition: all 0.25s
+    transition: all 0.25s
+.main-menu-btn-icon:before
+    content: ''
+    top: -10px
+    left: 0
+.main-menu-btn-icon:after
+    content: ''
+    top: 10px
+    left: 0
+#menu-bar:checked ~ .main-menu-btn-icon
+    left: 0px
+    height: 0
+    background: inherit
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:before
+    transform: rotate(-45deg)
+    top: 0
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+#menu-bar:checked ~ .main-menu-btn-icon:after
+    top: 0
+    transform: rotate(45deg)
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+.header__menu .navbar ul li .drop:after
+    content: ''
+    background-image: url("../img/image 97.png");
+    display: block
+    position: absolute
+    right: -15px
+    top: 39%
+    width: 10px
+    height: 14px
+.header__menu .navbar ul li ul li .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid #333
+    border-bottom: 0px solid transparent
+.header__menu .navbar ul li ul li:focus-within > .drop:after,
+.header__menu .navbar ul li ul li:active > .drop:after,
+.header__menu .navbar ul li ul li:target > .drop:after,
+.header__menu .navbar ul li ul li:hover > .drop:after
+    content: ''
+    display: block
+    position: absolute
+    right: 20px
+    top: 42%
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 10px solid white
+    border-bottom: 0px solid transparent
+@media(max-width: 1024px)
+	.header__menu label
+        display: initial
+	.header__menu .navbar ul li
+        width: 100%
+	.header__menu .navbar ul li ul
+        position: relative
+        width: 100%
+	.header__menu .navbar ul li ul li
+        background: white
+	.header__menu .navbar ul li ul li a
+        padding-left: 45px
+	.header__menu .navbar ul li ul li ul
+        width: 100%
+        left: 0
+	.header__menu .navbar ul li .drop:after
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+	.header__menu .navbar ul li ul li .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 33%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid #333
+        border-bottom: 0px solid transparent
+	.header__menu .navbar ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li:active > .drop:after,
+	.header__menu .navbar ul li:target > .drop:after,
+	.header__menu .navbar ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 7%
+	.header__menu .navbar ul li ul li:focus-within > .drop:after,
+	.header__menu .navbar ul li ul li:active > .drop:after,
+	.header__menu .navbar ul li ul li:target > .drop:after,
+	.header__menu .navbar ul li ul li:hover > .drop:after
+        content: ''
+        display: block
+        position: absolute
+        right: 20px
+        top: 10%
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 15px solid white
+        border-bottom: 0px solid transparent
