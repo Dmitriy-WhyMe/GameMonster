@@ -56,6 +56,7 @@
 				},
 			}
 		});
+		
 		var swiper2 = new Swiper(".mySwiper-1", {
 			slidesPerView: 5,
 			spaceBetween: 30,
@@ -91,6 +92,43 @@
 					spaceBetween: 30,
 					slidesPerView: 5,
 				},
+			}
+		});
+
+
+		var swiper = new Swiper(".card__slider-1", {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			watchSlidesProgress: true,
+			allowTouchMove: false,
+		});
+		var swiper3 = new Swiper(".card__slider-2", {
+			slidesPerView: 6,
+			spaceBetween: 13,
+			grabCursor: true,
+			loop: true,
+			speed: 1000,
+			autoplay: {
+				delay: 5000,
+			},
+			thumbs: {
+				swiper: swiper,
+			},
+			breakpoints: {
+				310: {
+					slidesPerView: 3,
+				},
+				768: {
+					slidesPerView: 6,
+				},
+				1025: {
+					slidesPerView: 5,
+				},
+				1440: {
+					slidesPerView: 6,
+				},
+				
 			}
 		});
 
