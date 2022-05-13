@@ -19,8 +19,8 @@ var path = {
 		css: './app/css/',
 		gulpfile: './gulpfile.js',
 		js: './app/js/',
-		jsLibs: ['./app/libs/aos-master/dist/aos.js'],
-		cssLibs: ['./app/libs/aos-master/dist/aos.css'],
+		jsLibs: ['./app/libs/aos-master/dist/aos.js', './app/libs/roullet-script/vanillaRoulette.js'],
+		cssLibs: ['./app/libs/aos-master/dist/aos.css', './app/libs/roullet-script/vanillaRoulette.css'],
 		deleteLibs: ['./app/js/libs.js', './app/css/libs.css']
 	}
 }

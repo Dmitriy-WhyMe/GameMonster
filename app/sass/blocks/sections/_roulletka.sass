@@ -1,0 +1,122 @@
+.roulletka
+    margin-top: 55px
+    position: relative
+    +mq($max-width: 819px)
+        margin-top: 30px
+    &__absolute
+        position: absolute
+        z-index: 10
+        top: -18px
+        left: 0
+        right: 0
+        margin: auto
+        +mq($max-width: 1279px)
+            max-width: 50px
+    &__middle
+        margin-top: 55px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 90px
+        +mq($max-width: 819px)
+            gap: 20px
+            margin-top: 20px
+        +mq($max-width: 767px)
+            flex-direction: column
+            gap: 15px
+        .btn
+            background: #F59502
+            border-radius: 13px
+            height: 56px
+            max-width: 210px
+            font-weight: 500
+            font-family: 'Rubik', sans-serif
+            font-size: 18px
+            line-height: 125.69%
+            cursor: pointer
+    &__promo
+        padding: 0 22px
+        background: #2C2C2C
+        border-radius: 6px
+        height: 58px
+        width: 100%
+        max-width: 210px
+        font-weight: 400
+        font-size: 16px
+        line-height: 125.69%
+        letter-spacing: -0.01em
+        color: #757575
+    &__chance
+        p
+            font-weight: 400
+            font-size: 16px
+            line-height: 125.69%
+            color: rgba(255, 255, 255, 0.35)
+            margin-bottom: 7px
+            +mq($max-width: 767px)
+                text-align: center
+    &__checbox
+        display: flex
+        align-items: center
+        gap: 10px
+        label
+            background: #222222
+            border-radius: 7px
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #B7B7B7
+            font-weight: 500
+            font-size: 18px
+            line-height: 125.69%
+            cursor: pointer
+            &:hover
+                color: white
+                background: #F59502
+        input
+            display: none
+            &:checked + .roulletka__label
+                color: white
+                background: #F59502
+ 
+.roulette
+    position: relative
+    width: 100%
+    overflow: hidden
+    transition: 5s all
+    &::before
+        position: absolute
+        content: ''
+        width: 4px
+        border-radius: 4px
+        height: 218px
+        top: 0
+        left: 0
+        right: 0
+        margin: auto
+        background: #F59502
+        +mq($max-width: 1279px)
+            height: 154px
+.prize-item
+    height: auto
+    max-width: 350px
+    width: 100%
+    margin-right: 10px
+    +mq($max-width: 1279px)
+        max-width: 248px
+    &__title
+        text-align: center
+        font-weight: 400
+        font-size: 22px
+        line-height: 125.69%
+        margin-top: 20px
+    img
+        border-radius: 20px
+        max-width: 100%
+        height: 218px
+        object-fit: cover
+        +mq($max-width: 1279px)
+            height: 155px
+   

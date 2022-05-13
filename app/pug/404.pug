@@ -1,0 +1,15 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	body
+		include blocks/header.pug
+		main.page-container
+			.page-other__bg
+				img(src=img+"image 6.png", alt="")
+			.container(class="page-other page-error")
+				h1.page-error__title Похоже, такой страницы нет
+				a.btn(href="index.html") Вернуться на главную
+		include blocks/scripts.pug

@@ -132,5 +132,40 @@
 			}
 		});
 
+
+		let options = {
+			spacing: 0,      
+			acceleration: 150, 
+			fps: 60, 
+			selector: ":scope > *",
+			stopCallback: function({detail: { prize }}) {
+				console.log("stop");
+				console.log(`Selected prize index is: ${prize.index}`);
+			},
+			startCallback: function({detail: { prize }}) {
+				console.log("start");
+			}
+		};
+		
+		let roulette = new Roulette(".roulette", options);
+		
+		let mins = 0;
+		let maxs = $(".roulette__list").children().length;
+
+		function selfRandom(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		document.getElementById("start").addEventListener("click", function() {
+			roulette.rotateTo(selfRandom(mins, maxs), { tracks: 1, random: true });
+		});
+
+		$('input[name="rad"]').click(function(){
+			let target = $(this).val();
+			price__result = 49;
+			let result = target * price__result;
+			$(".price-result").html('&nbsp'+result);
+		});
+
 	});
 })(jQuery);

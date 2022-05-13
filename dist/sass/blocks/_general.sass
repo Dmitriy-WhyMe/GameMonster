@@ -145,3 +145,100 @@ a
 			color: white
 			background: #1C1C1C
 			border-radius: 5px
+
+.page-other
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	justify-content: center
+	bottom: 0
+	display: flex
+	flex-direction: column
+	z-index: -1
+	&__title
+		margin-top: 65px
+		font-weight: 900
+		font-size: 74px
+		line-height: 115.69%
+		max-width: 789px
+		margin-bottom: 20px
+		+mq($max-width: 1279px)
+			margin-top: 0px
+		+mq($max-width: 819px)
+			font-size: 55px
+		+mq($max-width: 767px)
+			font-size: 38px
+	&__subtitle
+		font-weight: 400
+		font-size: 27px
+		line-height: 148.19%
+		max-width: 527px
+		margin-bottom: 80px
+		+mq($max-width: 767px)
+			margin-bottom: 20px
+	form
+		display: flex
+		align-items: center
+		gap: 20px
+		input
+			height: 55px
+			background: rgba(193, 193, 193, 0.22)
+			backdrop-filter: blur(21.6px)
+			border-radius: 10.8px
+			font-weight: 400
+			font-size: 16px
+			line-height: 125.69%
+			color: rgba(255, 255, 255, 0.7)
+			max-width: 305px
+			width: 100%
+			padding: 0 20px
+		a
+			background: #F59502
+			backdrop-filter: blur(21.6px)
+			border-radius: 10.8px
+			height: 55px
+			max-width: 175px
+			font-weight: 500
+			font-size: 16px
+			line-height: 125.69%
+.page-error
+	h1
+		font-weight: 900
+		font-size: 102px
+		line-height: 99.69%
+		background: linear-gradient(180.29deg, rgba(0, 0, 0, 0) -18.92%, rgba(0, 0, 0, 0.7) 147.26%), #FFFFFF
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		background-clip: text
+		text-fill-color: transparent
+		mix-blend-mode: normal
+		max-width: 560px
+		width: 100%
+		margin-bottom: 38px
+		+mq($max-width: 767px)
+			font-size: 50px
+			max-width: 100%
+	.btn
+		background: #F59502
+		backdrop-filter: blur(21.6px)
+		border-radius: 10.8px
+		max-width: 250px
+		height: 73px
+		font-weight: 500
+		font-size: 16px
+		line-height: 125.69%
+
+.page-other__bg
+	position: absolute
+	top: 0
+	right: 0
+	z-index: -2
+	height: 100%
+	+mq($max-width: 1359px)
+		right: -30%
+	+mq($max-width: 767px)
+		display: none
+	img
+		max-height: 100vh
+		height: 100%
