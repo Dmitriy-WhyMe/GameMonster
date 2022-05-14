@@ -3,6 +3,7 @@
     position: relative
     +mq($max-width: 819px)
         margin-top: 30px
+    
     &__absolute
         position: absolute
         z-index: 10
@@ -34,6 +35,10 @@
             font-size: 18px
             line-height: 125.69%
             cursor: pointer
+            &:hover
+                background: #222222
+                color: #B7B7B7
+        
     &__promo
         padding: 0 22px
         background: #2C2C2C
@@ -81,6 +86,15 @@
                 color: white
                 background: #F59502
  
+.roullet
+    .fortune
+        &__item
+            background: inherit
+            color: white
+            text-align: inherit
+            cursor: pointer
+            font-family: 'Rubik', sans-serif
+            font-weight: 400
 .roulette
     position: relative
     width: 100%
@@ -99,6 +113,7 @@
         background: #F59502
         +mq($max-width: 1279px)
             height: 154px
+   
 .prize-item
     height: auto
     max-width: 350px
